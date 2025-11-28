@@ -1,0 +1,69 @@
+body {
+    background: #0a0f1f;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: rgba(255,255,255,0.07);
+    padding: 30px;
+    border-radius: 12px;
+    width: 450px;
+    text-align: center;
+    box-shadow: 0 0 20px #00eaff;
+}
+
+input {
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 15px;
+    background: transparent;
+    border: 2px solid #00eaff;
+    border-radius: 5px;
+    color: white;
+}
+
+button {
+    background: #00eaff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #00c2d9;
+}
+
+.hidden {
+    display: none;
+}
+
+#suggestions li {
+    text-align: left;
+    margin: 5px 0;
+}
+
+/* Strength Meter Container */
+#meterContainer {
+    width: 100%;
+    height: 12px;
+    background: #2c2c2c;
+    border-radius: 6px;
+    margin: 10px 0 15px 0;
+    overflow: hidden;
+}
+
+/* Actual moving strength bar */
+#meterBar {
+    height: 100%;
+    width: 0%;
+    background: red;
+    border-radius: 6px;
+    transition: width 0.5s ease, background 0.5s ease;
+}
